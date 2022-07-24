@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "548d7955-2aac-44bd-b528-cd1ff47a38f2",
+		"name": "Subscribe Websites",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5441504"
+	},
+	"item": [
+		{
+			"name": "Subscribe User To Website",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "website_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{website_url}}subscribe",
+					"host": [
+						"{{website_url}}subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "website_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{website_url}}posts",
+					"host": [
+						"{{website_url}}posts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "website_url",
+			"value": "http://subscription-platform.test/api/"
+		}
+	]
+}
