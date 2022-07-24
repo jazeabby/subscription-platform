@@ -16,12 +16,12 @@
 					"formdata": [
 						{
 							"key": "website_id",
-							"value": "10",
+							"value": "9",
 							"type": "text"
 						},
 						{
 							"key": "user_id",
-							"value": "6",
+							"value": "2",
 							"type": "text"
 						}
 					]
@@ -44,12 +44,17 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "website_id",
-							"value": "10",
+							"key": "title",
+							"value": "New title 2",
 							"type": "text"
 						},
 						{
-							"key": "user_id",
+							"key": "description",
+							"value": "Descirption 2",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
 							"value": "5",
 							"type": "text"
 						}
